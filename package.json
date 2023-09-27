@@ -1,0 +1,31 @@
+{
+  "name": "thejscookie",
+  "version": "1.1.0",
+  "description": "Member",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therohantomar/jsCookie.git"
+  },
+  "keywords": [
+    "thejsCookie",
+    "cookie-management",
+    "cookies",
+    "realtime",
+    "datastorage",
+    "getcookies",
+    "setcookies",
+    "removecookies",
+    "domcookies",
+    "realtimeStorage"
+  ],
+  "author": "therohantomar@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/therohantomar/jsCookie/issues"
+  },
+  "homepage": "https://github.com/therohantomar/jsCookie#readme"
+}
