@@ -1,4 +1,4 @@
-function setCookie(name, value, expiryDays) {
+function setCookie(name: string, value: string, expiryDays: number) {
   if (!name || !value) {
     throw new Error("Name and value are required for setting a cookie.");
   }
@@ -9,14 +9,14 @@ function setCookie(name, value, expiryDays) {
   document.cookie = `${name}=${value}; ${expires}; SameSite=Strict; path=/`;
 }
 
-function getCookie(name) {
+function getCookie(name: string) {
   if (!name) {
     throw new Error("Name is required for getting a cookie.");
   }
 
   const cookies = decodeURIComponent(document.cookie);
   const cookiesArray = cookies.split("; ");
-  let result = null;
+  let result: string | null = null;
 
   cookiesArray.forEach((element) => {
     if (element.indexOf(name) === 0) {
@@ -27,7 +27,7 @@ function getCookie(name) {
   return result;
 }
 
-function removeCookie(name) {
+function removeCookie(name: string) {
   if (!name) {
     throw new Error("Name is required for removing a cookie.");
   }
